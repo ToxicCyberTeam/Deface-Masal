@@ -23,7 +23,7 @@ banner = """
 
 Bahan	   : • Kode html script deface kalian
 Cara Pakai : • Buka New Session ( Tab Baru )
-	     $ cd Deface
+	     $ cd Deface-Masal
 	     $ nano terserah.html (bisa di ganti_-)
 	     • Pastekan kode script deface kalian
 	     • ctrl + x 
